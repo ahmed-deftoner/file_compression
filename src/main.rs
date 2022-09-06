@@ -21,5 +21,5 @@ fn main(){
     let output = encoder.finish().unwrap();
     println!("source len : {:?}", input.get_ref().metadata().unwrap().len());
     println!("target len : {:?}", output.metadata().unwrap().len());
-
+    println!("time : {:?}", start.elapsed());
 }
